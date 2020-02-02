@@ -12,6 +12,7 @@ public class Auto {
     private String marca;
     private String modelo;
     private String color;
+    private boolean acceso = false;
 
     public Auto() {
     }
@@ -46,7 +47,24 @@ public class Auto {
         this.color = color;
     }
 
-    public void encender() {
+    public void meterLlave(String clave) {
+        if (clave.equals("123456")) {
+            acceso = true;
+        }else{
+            acceso = false;
+            System.out.println("Llamar a emergencia");
+        }
+    }
+
+    public void mando(String accion) {
+        if (acceso == true) {
+            if (accion.equals("enciende")) {
+                encender();
+            }
+        }
+    }
+
+    private void encender() {
         System.out.println("Encender!!");
     }
 

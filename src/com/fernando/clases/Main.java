@@ -22,7 +22,12 @@ public class Main {
     public static void main(String[] args) {
 
         Auto auto = new Auto();
-        auto.acelearar();
+        auto.setModelo("1980");
+        auto.setMarca("Toyota");
+        auto.setColor("Azul");
+        
+        auto.meterLlave("1234567");
+        auto.mando("enciende");
 
     }
 
