@@ -37,7 +37,7 @@ public class MatrizTranspuesta {
             }
         }
 
-        System.out.println("Matriz transpuesta");
+        System.out.println("La matriz transpuesta es : ");
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 System.out.print(matrizT[i][j] + "\t");
