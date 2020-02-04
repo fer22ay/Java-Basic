@@ -15,6 +15,7 @@ public class Auto {
     private boolean acceso = false;
 
     public Auto() {
+
     }
 
     public Auto(String marca, String modelo, String color) {
@@ -50,7 +51,7 @@ public class Auto {
     public void meterLlave(String clave) {
         if (clave.equals("123456")) {
             acceso = true;
-        }else{
+        } else {
             acceso = false;
             System.out.println("Llamar a emergencia");
         }
